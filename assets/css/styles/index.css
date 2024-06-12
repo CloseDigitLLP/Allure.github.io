@@ -68,13 +68,13 @@
     }
 
     .header-section::before {
-        position: absolute;
+        position: fixed;
         content: '';
         height: 1px;
         width: 100%;
         background-image: url(../../images/header/logo-line.svg);
         background-repeat: no-repeat;
-        bottom: 15px;
+        top: 140px;
         left: 0;
 
         background-position: center;
@@ -110,5 +110,8 @@
     .header-section .brand-logo img {
         width: 80px;
         height: 36px;
+    }
+    .header-section::before {
+        top: 85px;
     }
 }
