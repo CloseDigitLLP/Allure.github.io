@@ -45,6 +45,13 @@
     color: #666666;
 }
 
+.header-section .navbar ul li a:hover{
+    color: #333366 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 7px;
+    font-weight: 700;
+}
+
 .header-section .brand-logo img {
     width: 100%;
 }
@@ -84,7 +91,7 @@
         width: 100%;
         background-image: url(../../images/header/logo-line.svg);
         background-repeat: no-repeat;
-        top: 140px;
+        top: 126px;
         left: 0;
         background-position: center;
     }
@@ -128,7 +135,7 @@
     }
 
     .header-section::before {
-        top: 85px;
+        top: 62px;
     }
     .header-section .navbar {
         padding: 15px 0 15px 0 !important;
