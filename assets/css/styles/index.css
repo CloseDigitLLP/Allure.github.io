@@ -1,16 +1,10 @@
 :root {
-    --orange: #FF7262;
+    --card-text: #666666;
     --white: #FFFFFF;
     --balck: #000000;
     --primary: #666666;
     --footertext: #F5F1EE;
 }
-
-
-
-
-
-
 
 /* header section */
 
@@ -274,8 +268,9 @@
     width: 100%;
     max-width: 1365px;
 }
+
 .footer-section .footer-input-section .row {
-  margin: 0 !important;
+    margin: 0 !important;
 }
 
 .footer-input-section input {
@@ -312,10 +307,9 @@
     text-decoration: none;
 }
 
-.footer-section .footer-btn:hover div{
-
-      color:#E2DFE0;
-    background:#68686833 ;
+.footer-section .footer-btn:hover div {
+    color: #E2DFE0;
+    background: #68686833;
 }
 
 .footer-section .footer-btn div {
@@ -366,9 +360,11 @@
     .footer-section .footer-text h5 {
         max-width: 85%;
     }
+
     .footer-section .social-icons {
         margin-bottom: 0px;
     }
+
     .footer-section {
         padding: 24px 0 10px 0;
     }
@@ -422,7 +418,260 @@
     .footer-section .footer-logo {
         margin: 25px 0;
     }
+
     .footer-section .footer-btn div {
         padding: 7px 19px;
     }
+}
+
+
+
+
+
+
+
+/* banner-section */
+.banner-section {
+    background-image: url(../../images/homepage/allure_signature_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-section .banner-content {
+    padding: 192px 0 228px 0;
+}
+
+.banner-section h2 {
+    font-family: "Calista";
+    font-size: 102.25px;
+    font-weight: 400;
+    text-align: center;
+    color: #E3DEDE;
+    margin-bottom: 47px;
+}
+
+.banner-section h2 span {
+    font-family: "Sabon";
+    font-size: 103px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    color: #E3DEDE;
+
+}
+
+.banner-section p {
+    font-family: "Montserrat";
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    color: #E3DEDE;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 54px;
+}
+
+.banner-section .btn-part {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-section button {
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    color: #666666;
+    padding: 20px 68px;
+    border-radius: 50px;
+    border: none;
+}
+
+
+
+.homepage-content-section .homepage-content {
+    padding: 70px 0;
+    background-color: #F5F1EE;
+    justify-content: center;
+    display: flex;
+}
+
+
+.homepage-content-section .homepage-content .img-part {
+    padding-left: 150px;
+    max-width: 846px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.homepage-content-section .homepage-content .text-card-part {
+    width: 100%;
+    max-height: 664px;
+    padding: 60px 150px;
+    background-color: var(--white);
+    border-top-left-radius: 384px;
+    border-bottom-left-radius: 384px;
+    margin-left: -100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.homepage-content-section .text-card-part .text-card {
+    background-color: #F5F1EE;
+    max-width: 620px;
+    max-height: 580px;
+    width: 100%;
+    padding: 124px 27px;
+    margin: 0 10%;
+}
+
+.homepage-content-section .text-card-part .text-card h3 {
+    font-family: "Montserrat";
+    font-size: 60px;
+    font-weight: 400;
+    text-align: right;
+    color: var(--card-text);
+    text-transform: uppercase;
+    margin-bottom: 27px;
+
+}
+
+.homepage-content-section .text-card-part .text-card p {
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 400;
+    text-align: right;
+    color: var(--card-text);
+
+}
+
+.homepage-content-section .text-card-part .text-card .btn-part {
+    display: flex;
+    justify-content: end;
+}
+
+.homepage-content-section .text-card-part .text-card button {
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--card-text);
+    background: #E3DEDE;
+    padding: 20px 174px;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width:1801px) {
+    .homepage-content-section .text-card-part .text-card h3 {
+        font-size: 45px;
+        margin-bottom: 18px;
+    }
+    .homepage-content-section .text-card-part .text-card p {
+        font-size: 24px;
+    }
+    .homepage-content-section .text-card-part .text-card button {
+        font-size: 15px;
+        padding: 20px 120px;
+        margin-top: 12px;
+    }
+    .homepage-content-section .text-card-part .text-card {
+        max-width: 620px;
+        max-height: 510px;
+        padding: 80px 27px;
+    }
+
+}
+
+@media screen and (max-width:1501px) {
+    .homepage-content-section .text-card-part .text-card h3 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .homepage-content-section .text-card-part .text-card p {
+        font-size: 16px;
+    }
+    .homepage-content-section .text-card-part .text-card button {
+        font-size: 13px;
+        padding: 18px 70px;
+        margin-top: 12px;
+    }
+    .homepage-content-section .text-card-part .text-card {
+        max-height: 344px;
+        padding: 50px 27px;
+    }
+}
+
+@media screen and (max-width:1225px) {
+    .homepage-content-section .text-card-part .text-card h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .homepage-content-section .text-card-part .text-card p {
+        font-size: 12px;
+    }
+    .homepage-content-section .homepage-content .text-card-part {
+        margin-left: -68px;
+    }
+    .homepage-content-section .text-card-part .text-card button {
+        font-size: 10px;
+        padding: 16px 58px;
+        margin-top: 10px;
+    }
+    .homepage-content-section .text-card-part .text-card {
+        max-height: 290px;
+        width: 100%;
+        padding: 70px 27px;
+        margin: 0 0%;
+    }
+    .homepage-content-section .homepage-content .text-card-part {
+        padding: 40px 135px;
+    }
+    .homepage-content-section .homepage-content .img-part {
+        padding-left: 120px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .homepage-content-section .text-card-part .text-card button {
+        display: none;
+    }
+    .homepage-content-section .homepage-content .text-card-part {
+        margin-left: -45px;
+    }
+    .homepage-content-section .homepage-content .text-card-part {
+        padding: 15px 95px;
+    }
+    .homepage-content-section .text-card-part .text-card {
+        max-height: 290px;
+        width: 100%;
+        padding: 40px 27px;
+        margin: 0 0%;
+    }
+    .homepage-content-section .homepage-content .img-part {
+        padding-left: 80px;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .homepage-content-section .homepage-content .img-part {
+        padding-left: 50px;
+    }
+    .homepage-content-section .homepage-content {
+        padding: 60px 0;
+    }
+    .homepage-content-section .text-card-part .text-card {
+        padding: 25px 27px;
+    }
+}
+
+@media screen and (max-width:670px) {
+
 }
