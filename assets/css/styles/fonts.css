@@ -51,3 +51,16 @@
     font-weight: 900;
     src: url(../../fonts/montserrat/Montserrat-Black.ttf);
 }
+
+
+@font-face {
+    font-family: "Satoshi";
+    font-weight: 500;
+    src: url(../../fonts/satoshi/Satoshi-Variable.ttf);
+}
+
+@font-face {
+    font-family: "calista";
+    font-weight: 700;
+    src: url(../../fonts/calista/calista.ttf);
+}
