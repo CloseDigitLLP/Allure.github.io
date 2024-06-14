@@ -1,0 +1,134 @@
+.about-section .about-banner-section {
+    padding: 115px 0px 235px 0px;
+}
+
+.about-section .about-banner-section .about-banner-content h2 {
+    width: 90%;
+}
+
+.about-section .about-banner-section .about-banner-content p {
+    margin-left: 10%;
+    margin-top: 32px;
+}
+
+.about-section .meet-artist-section {
+    background-color: #faf9f8;
+}
+
+.about-section .meet-artist-section .about-img-part img{
+    width: 100%;
+}
+
+.about-section .meet-artist-section .meet-artist-content{
+    margin: 160px 150px 290px 74px  ;
+}
+
+.about-section .meet-artist-section .meet-artist-content .meet-artist-heading {
+    font-family: Calista;
+    font-size: 65px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--primary);
+}
+
+.about-section .meet-artist-section .meet-artist-content .meet-artist-text {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+    color: var(--primary);
+}
+
+.about-section .meet-artist-section .meet-artist-content .meet-artist-text span {
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+/* media query  */
+@media screen and (max-width:1440px){
+    .about-section .about-banner-section {
+        padding: 70px 0px 80px 0px;
+    }
+    .about-section .meet-artist-section .meet-artist-content .meet-artist-heading{
+        font-size: 44px;
+    }
+    .about-section .meet-artist-section .meet-artist-content .meet-artist-text {
+        font-size: 24px;
+    }
+    .about-section .meet-artist-section .meet-artist-content .meet-artist-text span{
+        font-size: 24px;
+    }
+    .about-section .meet-artist-section .meet-artist-content{
+        margin: 120px 100px 220px 90px;
+    }
+    .about-section .meet-artist-section .about-img-part img{
+        width: 110%;
+    }
+}
+
+@media screen and (max-width:992px){
+    .about-section .about-banner-section {
+        padding: 50px 0px 60px 0px;
+    }
+    .about-section .meet-artist-section .about-img-part img{
+        width: 80% ;
+    }
+    .about-section .about-banner-section .about-banner-content h2 {
+        width: 94%;
+    }
+    .about-section .meet-artist-section .meet-artist-content .meet-artist-heading{
+        font-size: 34px;
+    }
+    .about-section .meet-artist-section .meet-artist-content .meet-artist-text {
+        font-size: 18px;
+    }
+    .about-section .meet-artist-section .meet-artist-content .meet-artist-text span{
+        font-size: 18px;
+    }
+    .about-section .meet-artist-section .meet-artist-content {
+        margin: 70px 100px 99px 90px;
+    }
+}
+@media screen and (max-width:769px){
+    .about-section .meet-artist-section .meet-artist-content .meet-artist-heading{
+        font-size: 28px;
+    }
+    .about-section .meet-artist-section .meet-artist-content .meet-artist-text {
+        font-size: 16px;
+    }
+    .about-section .meet-artist-section .meet-artist-content .meet-artist-text span{
+        font-size: 16px;
+    }
+    .about-section .meet-artist-section .meet-artist-content {
+        margin: 69px 40px 99px 100px;
+    }
+}
+
+@media screen and (max-width:521px){
+    .about-section .meet-artist-section .meet-artist-content {
+        margin: 70px 30px 99px 66px;
+    }
+}
+
+@media screen and (max-width:376px){
+    .about-section .about-banner-section .about-banner-content h2 {
+        width: 100%;
+    }
+    .about-section .about-banner-section .about-banner-content p {
+        margin-top: 12px;
+    }
+    .about-section .about-banner-section {
+        padding: 24px 0px 34px 0px;
+    }
+    
+    .about-section .meet-artist-section .meet-artist-content{
+        margin: 30px 10px 116px 10px  ;
+    }
+}
+
+
+

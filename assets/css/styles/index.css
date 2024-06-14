@@ -1,10 +1,57 @@
 :root {
     --card-text: #666666;
     --white: #FFFFFF;
-    --balck: #000000;
+    --black: #000000;
     --primary: #666666;
     --footertext: #F5F1EE;
 }
+
+/* common css  */
+
+.main-heading {
+    font-family: Calista;
+    font-size: 90px;
+    font-weight: 400;
+    text-align: left;
+    color: var(--primary);
+}
+
+.secondary-text {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+    color: var(--primary);
+}
+
+@media screen and (max-width:1440px){
+    .main-heading{
+        font-size: 60px;
+    }
+    .secondary-text{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .main-heading{
+        font-size: 44px;
+    }
+    .secondary-text{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .main-heading {
+        font-size: 22px;
+    }
+    .secondary-text {
+        font-size: 16px;
+    }
+}
+
+
 
 /* header section */
 
@@ -573,14 +620,17 @@
         font-size: 45px;
         margin-bottom: 18px;
     }
+
     .homepage-content-section .text-card-part .text-card p {
         font-size: 24px;
     }
+
     .homepage-content-section .text-card-part .text-card button {
         font-size: 15px;
         padding: 20px 120px;
         margin-top: 12px;
     }
+
     .homepage-content-section .text-card-part .text-card {
         max-width: 620px;
         max-height: 510px;
@@ -594,14 +644,17 @@
         font-size: 32px;
         margin-bottom: 10px;
     }
+
     .homepage-content-section .text-card-part .text-card p {
         font-size: 16px;
     }
+
     .homepage-content-section .text-card-part .text-card button {
         font-size: 13px;
         padding: 18px 70px;
         margin-top: 12px;
     }
+
     .homepage-content-section .text-card-part .text-card {
         max-height: 344px;
         padding: 50px 27px;
@@ -613,26 +666,32 @@
         font-size: 20px;
         margin-bottom: 5px;
     }
+
     .homepage-content-section .text-card-part .text-card p {
         font-size: 12px;
     }
+
     .homepage-content-section .homepage-content .text-card-part {
         margin-left: -68px;
     }
+
     .homepage-content-section .text-card-part .text-card button {
         font-size: 10px;
         padding: 16px 58px;
         margin-top: 10px;
     }
+
     .homepage-content-section .text-card-part .text-card {
         max-height: 290px;
         width: 100%;
         padding: 70px 27px;
         margin: 0 0%;
     }
+
     .homepage-content-section .homepage-content .text-card-part {
         padding: 40px 135px;
     }
+
     .homepage-content-section .homepage-content .img-part {
         padding-left: 120px;
     }
@@ -642,18 +701,22 @@
     .homepage-content-section .text-card-part .text-card button {
         display: none;
     }
+
     .homepage-content-section .homepage-content .text-card-part {
         margin-left: -45px;
     }
+
     .homepage-content-section .homepage-content .text-card-part {
         padding: 15px 95px;
     }
+
     .homepage-content-section .text-card-part .text-card {
         max-height: 290px;
         width: 100%;
         padding: 40px 27px;
         margin: 0 0%;
     }
+
     .homepage-content-section .homepage-content .img-part {
         padding-left: 80px;
     }
@@ -664,14 +727,48 @@
     .homepage-content-section .homepage-content .img-part {
         padding-left: 50px;
     }
+
     .homepage-content-section .homepage-content {
         padding: 60px 0;
     }
+
     .homepage-content-section .text-card-part .text-card {
         padding: 25px 27px;
     }
 }
 
-@media screen and (max-width:670px) {
+@media screen and (max-width:670px) {}
 
+
+
+/* breadcrumb  */
+.breadcrumbs-part {
+    margin-top: 18px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: url('../../images/header/breadcrumb-arrow.svg');
+}
+
+.breadcrumb .breadcrumb-item a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 21.22px;
+    text-align: center;
+    color: #333366;
+}
+
+@media screen and (max-width:520px){
+    .breadcrumbs-part {
+        margin-top: 5px;
+    }
+    .breadcrumb .breadcrumb-item a {
+        font-size: 12px;
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+        content: url('../../images/header/breadcrumb-arrow-small.svg');
+    }
+    
 }
