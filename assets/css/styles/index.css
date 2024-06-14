@@ -556,6 +556,7 @@ body {
     .footer-section .footer-btn .btn-2 {
         padding: 15px 5px !important;
     }
+ 
 }
 
 @media screen and (max-width:992px) {
@@ -581,6 +582,7 @@ body {
     .footer-section .btn span {
         font-size: 15px;
     }
+  
 }
 
 @media screen and (max-width:520px) {
@@ -792,7 +794,7 @@ body {
 
     .homepage-content-section .text-card-part .text-card button {
         font-size: 15px;
-        padding: 20px 120px;
+        padding: 20px 20px;
         margin-top: 12px;
     }
 
@@ -805,6 +807,9 @@ body {
 }
 
 @media screen and (max-width:1501px) {
+    .homepage-content-section .btn span {
+        font-size: 14px;
+    }
     .homepage-content-section .text-card-part .text-card h3 {
         font-size: 32px;
         margin-bottom: 10px;
@@ -906,7 +911,7 @@ body {
     }
 
     .homepage-content-section .homepage-content .text-card-part {
-        padding: 15px 95px;
+        padding: 15px 60px;
     }
 
     .homepage-content-section .text-card-part .text-card {
