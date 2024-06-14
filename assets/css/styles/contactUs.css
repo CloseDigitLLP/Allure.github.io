@@ -1,0 +1,36 @@
+.contact-us .contact-us-content .btn-2 {
+    padding: 20px 60px;
+    max-width: 506px;
+}
+
+.contact-us .contact-us-content .theme-button {
+    display: flex;
+    justify-content: start;
+
+}
+
+.contact-us .contact-us-content h2 {
+    font-family: "Calista";
+    font-size: 90px;
+    font-weight: 400;
+    text-align: left;
+    color: #666666;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+
+}
+
+.contact-us .contact-us-content p {
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 38px;
+    color: #666666;
+    margin-bottom: 100px;
+
+}
+
+
+
+
+@media screen and (max-width: 1500px) {}

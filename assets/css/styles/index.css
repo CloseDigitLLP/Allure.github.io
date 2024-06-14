@@ -6,9 +6,133 @@
     --footertext: #F5F1EE;
 }
 
+body {
+    position: relative;
+}
+
+
+/* fixed btn */
+
+.fixed-btn {
+    position: fixed;
+    bottom: 48px;
+    right: 48px;
+    border: 1px solid var(--white);
+    border-radius: 200px;
+    max-height: 58px;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 40px 14px 40px 14px;
+    align-items: center;
+    background-color: #F5F1EE;
+    z-index: 50;
+}
+
+.fixed-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+/* theme button */
+.theme-button {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-2 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 200px;
+    padding: 20px 60px;
+    background-color: #E3DEDE;
+    color: #666666;
+    border: none;
+    cursor: pointer;
+    transition: width 0.5s ease-out;
+    max-width: 305px;
+    width: 100%;
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: 700;
+
+}
+
+.btn-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #666666;
+    transition: width 0.3s ease-out;
+    z-index: 0;
+}
+
+.btn-2:hover::before {
+    width: 100%;
+}
+
+.btn-2 span {
+    position: relative;
+    z-index: 1;
+    color: #666666;
+    transition: color 0.3s, z-index 0s 0.3s;
+}
+
+.btn-2:hover span {
+    color: #E3DEDE;
+    transition: width 0.3s ease-out;
+}
+
+.btn span {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+.footer-section .footer-btn {
+    width: 100%;
+    border-radius: 50px;
+    border: 2px solid #FFFFFF80;
+    border-radius: 50px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.footer-section .footer-btn .btn-2 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 200px;
+    padding: 15px 20px;
+    background-color: #E3DEDE;
+    color: #666666;
+    border: none;
+    cursor: pointer;
+    transition: width 0.5s ease-out;
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+    font-family: "Satoshi";
+    font-size: 17.44px;
+    font-weight: 500;
+}
+
+
+
+
+/*  */
+
 /* header section */
-
-
 .header-section .navbar {
     padding: 34px 0 !important;
 }
@@ -52,6 +176,7 @@
     min-width: 250px;
     text-align: center;
     color: var(--primary);
+    transition: background-color 0.3s ease, transform 0.3s ease, font-weight 0.3s ease;
 }
 
 .header-section .navbar ul li a:hover {
@@ -127,6 +252,13 @@
 
     .header-section .navbar ul {
         margin-top: 36px;
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        left: 0;
+        height: 100vh;
+        top: 28px;
+        padding: 0 20px;
     }
 
     .header-section .navbar ul li a {
@@ -146,6 +278,11 @@
     .container {
         max-width: 100%;
     }
+
+    .fixed-btn {
+        bottom: 48px;
+        right: 36px;
+    }
 }
 
 @media screen and (max-width:520px) {
@@ -160,6 +297,17 @@
 
     .header-section .navbar {
         padding: 14px 0 14px 0 !important;
+    }
+
+    .fixed-btn {
+        padding: 25px 6px 25px 6px;
+        bottom: 16px;
+        right: 8px;
+    }
+
+    .fixed-btn img {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -295,39 +443,13 @@
     text-align: left;
 }
 
-.footer-section .footer-btn {
-    width: 100%;
-    border-radius: 50px;
-    border: 2px solid #FFFFFF80;
-    border-radius: 50px;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.footer-section .footer-btn:hover div {
-    color: #E2DFE0;
-    background: #68686833;
-}
-
-.footer-section .footer-btn div {
-    font-family: "Satoshi";
-    font-size: 17.44px;
-    font-weight: 500;
-    color: #333366;
-    background: #E2DFE0;
-    padding: 19px 19px;
-    width: 100%;
-    border-radius: 50px;
-    text-align: center;
-}
 
 
-@media screen and (max-width:1100px) {
-    .footer-section .footer-btn div {
-        font-size: 13px;
+
+@media screen and (max-width:1105px) {
+
+    .footer-section .footer-btn .btn-2 {
+        padding: 15px 5px !important;
     }
 }
 
@@ -340,10 +462,6 @@
         font-size: 35px;
     }
 
-    .footer-section .footer-btn div {
-        font-size: 17px;
-    }
-
     .footer-section .row>* {
         padding-right: 0 !important;
         padding-left: 0 !important;
@@ -353,6 +471,10 @@
 @media screen and (max-width:1200px) {
     .footer-section .footer-text h5 {
         max-width: 70%;
+    }
+
+    .footer-section .btn span {
+        font-size: 15px;
     }
 }
 
@@ -418,10 +540,6 @@
     .footer-section .footer-logo {
         margin: 25px 0;
     }
-
-    .footer-section .footer-btn div {
-        padding: 7px 19px;
-    }
 }
 
 
@@ -433,9 +551,13 @@
 /* banner-section */
 .banner-section {
     background-image: url(../../images/homepage/allure_signature_image.png);
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    display: table;
 }
 
 .banner-section .banner-content {
@@ -472,29 +594,24 @@
     margin-bottom: 54px;
 }
 
-.banner-section .btn-part {
-    display: flex;
-    justify-content: center;
+
+
+
+
+
+
+/* homepage */
+
+
+.homepage-content-section {
+    background-color: #F5F1EE;
+
 }
-
-.banner-section button {
-    font-family: "Montserrat";
-    font-size: 17px;
-    font-weight: 700;
-    text-align: center;
-    color: #666666;
-    padding: 20px 68px;
-    border-radius: 50px;
-    border: none;
-}
-
-
 
 .homepage-content-section .homepage-content {
-    padding: 70px 0;
-    background-color: #F5F1EE;
     justify-content: center;
     display: flex;
+    padding: 70px 0;
 }
 
 
@@ -521,10 +638,10 @@
 
 .homepage-content-section .text-card-part .text-card {
     background-color: #F5F1EE;
-    max-width: 620px;
+    max-width: 680px;
     max-height: 580px;
     width: 100%;
-    padding: 124px 27px;
+    padding: 90px 27px;
     margin: 0 10%;
 }
 
@@ -548,23 +665,13 @@
 
 }
 
-.homepage-content-section .text-card-part .text-card .btn-part {
+.homepage-content-section .text-card-part .text-card .card-btn {
     display: flex;
     justify-content: end;
 }
 
-.homepage-content-section .text-card-part .text-card button {
-    font-family: "Montserrat";
-    font-size: 17px;
-    font-weight: 700;
-    text-align: center;
-    color: var(--card-text);
-    background: #E3DEDE;
-    padding: 20px 174px;
-    border: none;
-    border-radius: 50px;
-    text-transform: uppercase;
-    margin-top: 30px;
+.homepage-content-section .theme-button {
+    display: none;
 }
 
 
@@ -573,14 +680,17 @@
         font-size: 45px;
         margin-bottom: 18px;
     }
+
     .homepage-content-section .text-card-part .text-card p {
         font-size: 24px;
     }
+
     .homepage-content-section .text-card-part .text-card button {
         font-size: 15px;
         padding: 20px 120px;
         margin-top: 12px;
     }
+
     .homepage-content-section .text-card-part .text-card {
         max-width: 620px;
         max-height: 510px;
@@ -594,84 +704,279 @@
         font-size: 32px;
         margin-bottom: 10px;
     }
+
     .homepage-content-section .text-card-part .text-card p {
         font-size: 16px;
     }
+
     .homepage-content-section .text-card-part .text-card button {
         font-size: 13px;
         padding: 18px 70px;
         margin-top: 12px;
     }
+
     .homepage-content-section .text-card-part .text-card {
         max-height: 344px;
         padding: 50px 27px;
     }
+
+    .homepage-content-section .homepage-content .img-part {
+        padding-left: 110px;
+    }
+
+    .homepage-content-section .homepage-content .img-part.reverse-img-part {
+        padding-right: 110px !important;
+    }
 }
 
 @media screen and (max-width:1225px) {
+    .banner-section h2 {
+        font-size: 80px;
+    }
+
+    .banner-section h2 span {
+        font-size: 80px;
+    }
+
+    .banner-section p {
+        font-size: 30px;
+    }
+
     .homepage-content-section .text-card-part .text-card h3 {
         font-size: 20px;
         margin-bottom: 5px;
     }
+
     .homepage-content-section .text-card-part .text-card p {
         font-size: 12px;
     }
+
+
     .homepage-content-section .homepage-content .text-card-part {
         margin-left: -68px;
     }
+
     .homepage-content-section .text-card-part .text-card button {
         font-size: 10px;
         padding: 16px 58px;
         margin-top: 10px;
     }
+
     .homepage-content-section .text-card-part .text-card {
         max-height: 290px;
         width: 100%;
         padding: 70px 27px;
         margin: 0 0%;
     }
+
     .homepage-content-section .homepage-content .text-card-part {
         padding: 40px 135px;
     }
+
     .homepage-content-section .homepage-content .img-part {
         padding-left: 120px;
     }
 }
 
 @media screen and (max-width:992px) {
+    .banner-section h2 {
+        font-size: 70px;
+    }
+
+    .banner-section h2 span {
+        font-size: 70px;
+    }
+
+    .banner-section p {
+        font-size: 25px;
+    }
+
     .homepage-content-section .text-card-part .text-card button {
         display: none;
     }
+
     .homepage-content-section .homepage-content .text-card-part {
         margin-left: -45px;
     }
+
     .homepage-content-section .homepage-content .text-card-part {
         padding: 15px 95px;
     }
+
     .homepage-content-section .text-card-part .text-card {
         max-height: 290px;
         width: 100%;
         padding: 40px 27px;
         margin: 0 0%;
     }
+
     .homepage-content-section .homepage-content .img-part {
         padding-left: 80px;
+    }
+
+    .homepage-content-section .homepage-content .img-part.reverse-img-part {
+        padding-right: 80px !important;
+    }
+
+    .homepage-content-section .theme-button {
+        display: block;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 60px;
     }
 }
 
 
 @media screen and (max-width:767px) {
+    .banner-section .banner-content {
+        padding: 67px 0 140px 0;
+    }
+
+    .banner-section h2 {
+        font-size: 50px;
+    }
+
+    .banner-section h2 span {
+        font-size: 50px;
+    }
+
+    .banner-section p {
+        width: 95%;
+    }
+
     .homepage-content-section .homepage-content .img-part {
         padding-left: 50px;
     }
+
+    .homepage-content-section .homepage-content .img-part.reverse-img-part {
+        padding-right: 50px !important;
+    }
+
+    .text-card-part .text-card.reverse-text-card {
+        padding: 27px 10px !important;
+    }
+
     .homepage-content-section .homepage-content {
         padding: 60px 0;
     }
+
     .homepage-content-section .text-card-part .text-card {
         padding: 25px 27px;
     }
 }
 
 @media screen and (max-width:670px) {
+    .homepage-content-section .text-card-part .text-card p {
+        font-size: 9px;
+    }
 
+    .homepage-content-section .homepage-content .img-part {
+        padding-left: 0px;
+    }
+
+    .homepage-content-section .homepage-content .img-part.reverse-img-part {
+        padding-right: 0px !important;
+    }
+
+    .homepage-content-section .homepage-content .text-card-part {
+        margin-left: -35px;
+    }
+
+    .homepage-content-section .text-card-part .text-card {
+        padding: 12px 27px;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .banner-section h2 {
+        font-size: 30px;
+        margin-bottom: 36px;
+    }
+
+    .banner-section h2 span {
+        font-size: 30px;
+    }
+
+    .banner-section p {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .homepage-content-section .text-card-part .text-card p {
+        font-size: 7px;
+    }
+
+    .homepage-content-section .text-card-part .text-card {
+        padding: 10px 10px;
+    }
+
+    .homepage-content-section .homepage-content .text-card-part {
+        padding: 14px 50px;
+        margin-left: -20px;
+    }
+
+    .btn-2 {
+        padding: 16px 68px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .homepage-content-section .text-card-part .text-card {
+        padding: 4px 4px;
+    }
+
+    .banner-section {
+        background-position: left;
+    }
+
+    .banner-section .banner-content {
+        padding: 36px 0 67px 0;
+    }
+
+    .text-card-part .text-card.reverse-text-card {
+        padding: 4px 4px !important;
+    }
+
+    .homepage-content-section .homepage-content {
+        padding: 15px 0 22px 0;
+    }
+
+    .theme-button button {
+        padding: 16px 68px;
+    }
+}
+
+
+
+
+
+
+
+/*  */
+
+.homepage-content-section .homepage-content .text-card-part.reverse-card {
+    border-top-right-radius: 384px;
+    border-bottom-right-radius: 384px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-left: 0px;
+    z-index: 5;
+    margin-right: -60px;
+}
+
+
+.homepage-content-section .homepage-content .text-card-part .btn-2 {
+    max-width: 506px;
+    width: 100%;
+}
+
+.homepage-content-section .homepage-content .img-part.reverse-img-part {
+    padding-left: 0px;
+    padding-right: 150px;
+}
+
+.homepage-content-section .text-card-part .text-card.reverse-text-card {
+    max-height: 635px;
+    width: 100%;
+    padding: 27px 27px;
 }
