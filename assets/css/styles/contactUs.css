@@ -9,28 +9,80 @@
 
 }
 
-.contact-us .contact-us-content h2 {
-    font-family: "Calista";
-    font-size: 90px;
-    font-weight: 400;
-    text-align: left;
-    color: #666666;
-    text-transform: uppercase;
-    margin-bottom: 18px;
-
+.contact-us {
+    overflow-x: hidden;
 }
 
-.contact-us .contact-us-content p {
-    font-family: "Montserrat";
-    font-size: 30px;
-    font-weight: 400;
+
+
+.contact-us .contact-us-content .text-left-container{
     margin-left: 38px;
-    color: #666666;
+    margin-bottom: 176px;
+}
+.contact-us .contact-us-content p{
     margin-bottom: 100px;
-
+}
+.contact-us .text-part {
+    padding-left: 100px;
+    padding-top: 80px;
+}
+.text-left-container-mobile{
+    display: none;
 }
 
 
+@media screen and (max-width: 1400px) {
+    .contact-us .text-part {
+        padding-left: 100px;
+        padding-top: 80px;
+    }
+    .contact-us .contact-us-content .text-left-container{
+        margin-left: 30px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contact-us .text-part {
+        padding-left: 65px;
+        padding-top: 50px;
+    }
+}
 
 
-@media screen and (max-width: 1500px) {}
+@media screen and (max-width: 991px) {
+    .contact-us .contact-us-content p {
+        margin-bottom: 55px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .contact-us .contact-us-content .text-left-container{
+      display: none !important;
+    }
+    .text-left-container-mobile{
+        display: block;
+        padding: 40px 30px 120px 36px;
+    }
+    .contact-us .text-part {
+        padding: 30px 0px 30px 65px;
+    }
+    .contact-us .text-part h2{
+       width: 50%;
+
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .contact-us .text-part {
+        padding: 30px 0px 20px 12px;
+    }
+    .contact-us .text-part h2 {
+        width: 60%;
+    }
+    .contact-us .contact-us-content .btn-2 {
+        padding: 12px 60px;
+        max-width: 506px;
+    }
+}
