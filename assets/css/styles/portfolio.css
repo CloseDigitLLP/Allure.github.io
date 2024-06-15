@@ -1,0 +1,34 @@
+.our-work-section .our-work-heading{
+    margin: 150px 0px 160px 0px;
+}
+
+.our-work-section .our-work-image-part{
+    margin: 80px 125px;
+}
+
+.our-work-section .our-work-image-part .image-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.our-work-section .our-work-image-part .image-section .image-section-1,.image-section-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 14px;
+    width: 100%;
+}
+
+/* .our-work-section .our-work-image-part .image-section .image-section-2{
+    margin-top: 14px;
+} */
+
+.our-work-section .our-work-image-part .image-section img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;   
+    flex-grow: 1;
+    object-fit: cover; 
+}
