@@ -5,6 +5,10 @@
 .ourwork-img-container {
     padding: 80px 274px;
     background-color: #FAF9F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .ourwork-img-container .image-section-1 {
@@ -32,7 +36,7 @@
     font-weight: 400;
     text-align: center;
     color: #666666;
-
+    text-transform: uppercase;
 }
 
 .ourwork-section .ourwork-text-part p {
@@ -45,13 +49,19 @@
 }
 
 
+
+
 @media screen and (max-width: 1550px) {
     .ourwork-img-container {
         padding: 80px 150px;
     }
+    .our-work-section .our-work-heading {
+        margin: 100px 0px 105px 0px;
+    }
+    
 
     .ourwork-section .ourwork-text-part {
-        padding: 55px 0 150px 0;
+        padding: 55px 0 70px 0;
     }
 
     .ourwork-section .ourwork-text-part h3 {
@@ -98,7 +108,7 @@
     }
 
     .our-work-section .our-work-heading {
-        margin: 50px 0px;
+        margin: 50px 0px !important;
     }
 
     .ourwork-section .ourwork-text-part h3 {
@@ -133,12 +143,16 @@
     }
 
     .our-work-section .our-work-heading {
-        margin: 25px 0px;
+        margin: 25px 0px !important;
     }
 
     .ourwork-section .ourwork-text-part h3 {
         font-size: 30px;
     }
+    .ourwork-section .ourwork-text-part .long-text{
+        font-size: 20px;
+    }
+
 
     .ourwork-section .ourwork-text-part p {
         font-size: 15px;

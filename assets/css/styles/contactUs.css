@@ -23,7 +23,7 @@
     margin-bottom: 100px;
 }
 .contact-us .text-part {
-    padding-left: 100px;
+    padding-left: 150px;
     padding-top: 80px;
 }
 .text-left-container-mobile{
@@ -31,15 +31,19 @@
 }
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1550px) {
     .contact-us .text-part {
-        padding-left: 100px;
+        padding-left: 70px;
         padding-top: 80px;
     }
+}
+
+@media screen and (max-width: 1400px) {
     .contact-us .contact-us-content .text-left-container{
         margin-left: 30px;
         margin-bottom: 100px;
     }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -54,6 +58,10 @@
     .contact-us .contact-us-content p {
         margin-bottom: 55px;
     }
+    .contact-us .text-part {
+        padding-left: 50px;
+        padding-top: 50px;
+    }
 }
 
 
@@ -66,7 +74,7 @@
         padding: 40px 30px 120px 36px;
     }
     .contact-us .text-part {
-        padding: 30px 0px 30px 65px;
+        padding: 30px 0px 30px 20px;
     }
     .contact-us .text-part h2{
        width: 50%;

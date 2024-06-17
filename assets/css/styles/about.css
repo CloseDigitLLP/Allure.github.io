@@ -63,110 +63,6 @@
 /* media query  */
 
 
-@media screen and (max-width:1440px) {
-    .about-section .about-banner-section {
-        padding: 70px 0px 80px 0px;
-    }
-
-    .about-section .meet-artist-section .meet-artist-content .meet-artist-heading {
-        font-size: 44px;
-    }
-
-    .about-section .meet-artist-section .meet-artist-content .meet-artist-text {
-        font-size: 24px;
-    }
-
-    .about-section .meet-artist-section .meet-artist-content .meet-artist-text span {
-        font-size: 24px;
-    }
-
-    .about-section .meet-artist-section .meet-artist-content {
-        margin: 120px 100px 220px 90px;
-    }
-
-    .about-section .meet-artist-section .about-img-part img {
-        width: 110%;
-    }
-}
-
-@media screen and (max-width:992px) {
-    .about-section .about-banner-section {
-        padding: 50px 0px 60px 0px;
-    }
-
-    .about-section .meet-artist-section .about-img-part img {
-        width: 80%;
-    }
-
-    .about-section .about-banner-section .about-banner-content h2 {
-        width: 94%;
-    }
-
-    .about-section .meet-artist-section .meet-artist-content .meet-artist-heading {
-        font-size: 34px;
-    }
-
-    .about-section .meet-artist-section .meet-artist-content .meet-artist-text {
-        font-size: 18px;
-    }
-
-    .about-section .meet-artist-section .meet-artist-content .meet-artist-text span {
-        font-size: 18px;
-    }
-
-    .about-section .meet-artist-section .meet-artist-content {
-        margin: 70px 24px 116px 24px !important;
-    }
-}
-
-@media screen and (max-width:769px) {
-    .about-section .meet-artist-section .meet-artist-content .meet-artist-heading {
-        font-size: 28px;
-    }
-
-    .about-section .meet-artist-section .meet-artist-content .meet-artist-text {
-        font-size: 16px;
-    }
-
-    .about-section .meet-artist-section .meet-artist-content .meet-artist-text span {
-        font-size: 16px;
-    }
-
-    .about-section .meet-artist-section .meet-artist-content {
-        margin: 69px 40px 99px 100px;
-    }
-}
-
-@media screen and (max-width:521px) {
-    .about-section .meet-artist-section .meet-artist-content {
-        margin: 70px 30px 99px 66px;
-    }
-    .about-section .meet-artist-section .about-img-part img {
-        width: 80% !important;
-    }
-    .about-section .meet-artist-section .meet-artist-content .meet-artist-text {
-        font-size: 13px !important;
-    }
-}
-
-@media screen and (max-width:376px) {
-    .about-section .about-banner-section .about-banner-content h2 {
-        width: 100%;
-    }
-
-    .about-section .about-banner-section .about-banner-content p {
-        margin-top: 12px;
-    }
-
-    .about-section .about-banner-section {
-        padding: 24px 0px 34px 0px;
-    }
-
-    .about-section .meet-artist-section .meet-artist-content {
-        margin: 30px 10px 116px 10px;
-    }
-}
-
 
 
 .about-section .about-banner-section {
@@ -224,11 +120,32 @@
 
 
 /* media query  */
+@media screen and (max-width:1200px) {
+    .about-section .meet-artist-section .meet-artist-content {
+        margin: 30px 100px 100px 90px;
+    }
+}
+
+
+@media screen and (max-width:1550px) {
+    .about-banner-section .main-heading {
+        font-size: 62px;
+    }
+    .about-section .about-banner-section {
+        padding: 100px 0px 100px 0px;
+    }
+    .about-section .meet-artist-section .meet-artist-content .meet-artist-text {
+        font-size: 20px !important;
+    }
+
+}
+
+
 @media screen and (max-width:1440px) {
     .about-section .about-banner-section {
         padding: 70px 0px 80px 0px;
     }
-
+  
     .about-section .meet-artist-section .meet-artist-content .meet-artist-heading {
         font-size: 44px;
     }
@@ -242,7 +159,7 @@
     }
 
     .about-section .meet-artist-section .meet-artist-content {
-        margin: 120px 100px 220px 90px;
+        margin: 120px 100px 120px 90px;
     }
 
     .about-section .meet-artist-section .about-img-part img {
@@ -250,12 +167,38 @@
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:992px) {
+    .about-section .about-banner-section {
+        padding: 50px 0px 60px 0px;
+    }
+
+    .about-section .meet-artist-section .about-img-part img {
+        width: 80%;
+    }
+
+    .about-section .about-banner-section .about-banner-content h2 {
+        width: 94%;
+    }
+
+    .about-section .meet-artist-section .meet-artist-content .meet-artist-heading {
+        font-size: 34px;
+    }
+
+    .about-section .meet-artist-section .meet-artist-content .meet-artist-text {
+        font-size: 18px;
+    }
+
+    .about-section .meet-artist-section .meet-artist-content .meet-artist-text span {
+        font-size: 18px;
+    }
+
     .about-section .meet-artist-section .meet-artist-content {
-        margin: 30px 100px 220px 90px;
+        margin: 70px 24px 116px 24px;
+    }
+    .about-banner-section .main-heading {
+        font-size: 50px;
     }
 }
-
 
 @media screen and (max-width:769px) {
     .about-section .meet-artist-section .meet-artist-content .meet-artist-heading {
@@ -269,9 +212,33 @@
     .about-section .meet-artist-section .meet-artist-content .meet-artist-text span {
         font-size: 15px;
     }
+    .about-banner-section .main-heading {
+        font-size: 34px;
+    }
+}
 
+@media screen and (max-width:521px) {
+    .about-section .about-banner-section {
+        padding: 20px 0px 30px 0px;
+    }
     .about-section .meet-artist-section .meet-artist-content {
-        margin: 69px 40px 99px 100px;
+        margin: 30px 12px 120px 12px;
+    }
+    .about-section .meet-artist-section .about-img-part img {
+        width: 80% !important;
+    }
+    .about-section .meet-artist-section .meet-artist-content .meet-artist-text {
+        font-size: 15px !important;
+    }
+    .meet-artist-section .theme-button {
+        justify-content: start;
+        margin-top: 42px;
+    }
+    .about-banner-section .main-heading {
+        font-size: 22px;
+    }
+    .about-section .about-banner-section .about-banner-content p {
+        margin-top: 14px;
     }
 }
 
