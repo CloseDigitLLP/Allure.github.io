@@ -94,3 +94,9 @@
         max-width: 506px;
     }
 }
+
+@media screen and (min-width: 1740px){
+    .contact-us-content .text-part h2{
+        font-size: 80px;
+    }
+}
