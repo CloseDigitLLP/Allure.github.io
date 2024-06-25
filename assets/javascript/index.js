@@ -24,14 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add active class to the current page's nav link
     if (activeNavId) {
         document.getElementById(activeNavId).classList.add('active');
-    }
-
-    // Check if the page is a portfolio detail page
-    if (path.includes('/portfolioDetails/')) {
+    } else if (path.includes('/portfolioDetails/')) {
+        // Check if the path indicates a portfolio detail page
         document.getElementById('work-nav').classList.add('active');
+    } else {
+        // If no specific page match, default to welcome
+        document.getElementById('welcome-nav').classList.add('active');
     }
 });
-
 
 // fixed btn
 
