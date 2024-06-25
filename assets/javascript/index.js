@@ -51,3 +51,16 @@ window.addEventListener('scroll', function () {
         scrollTopButton.style.display = 'none';
     }
 });
+
+
+// video
+document.addEventListener('DOMContentLoaded', (event) => {
+    const video = document.getElementById('intro-video');
+    const videoContainer = document.querySelector('.video-container');
+    document.body.style.overflow = 'hidden';
+
+    video.addEventListener('ended', () => {
+        videoContainer.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+});
