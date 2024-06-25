@@ -8,6 +8,14 @@
 
 
 /*  */
+body.home-page {
+    overflow: hidden; /* Initially hide overflow only for home page */
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
 .hidden {
     opacity: 0;
     transition: opacity 1s ease-out;
@@ -1082,9 +1090,6 @@ body {
     .homepage-content-section .text-card-part .text-card p {
         font-size: 9px;
     }
-    .banner-section p {
-        padding: 0px 80px;
-    }
     .homepage-content-section .homepage-content .img-part {
         padding-left: 0px;
     }
@@ -1180,7 +1185,7 @@ body {
     }
 
     .theme-button button {
-        padding: 16px 68px;
+        padding: 12px 68px;
     }
 }
 
