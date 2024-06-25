@@ -74,3 +74,22 @@ document.addEventListener('DOMContentLoaded', function() {
         body.classList.toggle('navbar-open');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var navbarCollapse = document.getElementById('navbarSupportedContent');
+    var navbarBackdrop = document.querySelector('.navbar-backdrop');
+    var navbarToggler = document.querySelector('.navbar-toggler');
+
+    navbarCollapse.addEventListener('show.bs.collapse', function () {
+        navbarBackdrop.style.display = 'block';
+        navbarBackdrop.style.zIndex = '2'; // Set z-index lower than the navbar
+    });
+
+    navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+        navbarBackdrop.style.display = 'none';
+    });
+
+    navbarBackdrop.addEventListener('click', function () {
+        navbarToggler.click(); 
+    });
+});
