@@ -1,11 +1,11 @@
 // ACTIVE LINK PART 
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Get the current path
+
     var path = window.location.pathname;
     var page = path.split("/").pop();
 
-    // Map page names to nav link IDs
+
     var pageToNavId = {
         "index.html": "welcome-nav",
         "about.html": "about-nav",
@@ -13,29 +13,27 @@ document.addEventListener("DOMContentLoaded", function () {
         "contactUs.html": "contact-nav"
     };
 
-    // Get the ID of the active nav link
     var activeNavId = pageToNavId[page];
 
-    // Remove active class from all nav links
+
     document.querySelectorAll('.nav-link').forEach(function (navLink) {
         navLink.classList.remove('active');
     });
 
-    // Add active class to the current page's nav link
+
     if (activeNavId) {
         document.getElementById(activeNavId).classList.add('active');
     } else if (path.includes('/portfolioDetails/')) {
-        // Check if the path indicates a portfolio detail page
+
         document.getElementById('work-nav').classList.add('active');
     } else {
-        // If no specific page match, default to welcome
+
         document.getElementById('welcome-nav').classList.add('active');
     }
 });
 
 // fixed btn
 
-// JavaScript code to scroll to the top
 document.getElementById('scrollTopButton').addEventListener('click', function () {
     window.scrollTo({
         top: 0,
@@ -62,5 +60,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     video.addEventListener('ended', () => {
         videoContainer.style.display = 'none';
         document.body.style.overflow = 'auto';
+    });
+});
+
+
+// navbar
+
+document.addEventListener('DOMContentLoaded', function() {
+    var navbarToggler = document.querySelector('.navbar-toggler');
+    var body = document.body;
+
+    navbarToggler.addEventListener('click', function() {
+        body.classList.toggle('navbar-open');
     });
 });

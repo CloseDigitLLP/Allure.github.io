@@ -12,10 +12,11 @@ body.home-page {
     overflow: hidden; /* Initially hide overflow only for home page */
 }
 
-.no-scroll{
+body.navbar-open {
     overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
-
 .hidden {
     opacity: 0;
     transition: opacity 1s ease-out;
